@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-color: #000000;
+  --background-start-color: #d6dbdc;
+  --background-end-color: #ffffff;
+
+}
+
+/*  */
+.__navbar__ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: var(--background-end-color);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+}
+
+.__navbar__logo__ img {
+  height: 40px;
+}
+
+.__navbar_searchbar__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 600px;
+  height: 40px;
+}
+
+.__navbar_searchbar__ input[type='text'] {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.__navbar_searchbar__ div:last-child {
+  margin-right: 10px;
+}
+
+.__navbar_searchbar__ div:last-child svg {
+  color: var(--foreground-color);
+  font-size: 20px;
+}
+
+.__navbar__signup {
+  display: flex;
+  align-items: center;
+}
+
+.__navbar__signup>p {
+  font-size: 18px;
+  margin-right: 20px;
+  color: #635656;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.__navbar__signup button {
+  color: var(--foreground-color);
+  background-color: #ffffff;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 8px 40px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  color: #635656;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media only screen and (min-width:768px) and (max-width: 1000px) {
+  .__navbar_searchbar__ {
+    width: 40%;
+    margin: 15px;
+  }
+
+
+  .__navbar__signup>p {
+    font-size: 17px;
+  }
+
+  .__navbar__signup button {
+
+    font-size: 17px;
+    padding: 8px 15px;
+
+  }
+}
+
+
+
+/* for not showing or not giving hamburger icon to take space until this media query
+otherwise it will take space even not displayed */
+@media screen and (min-width: 769px) {
+  .__navbar__hamburger__ {
+    display: none;
+  }
+
+}
+
+/* responsiveness for below 767 screen width */
+
+@media only screen and (max-width: 767px) {
+  .__navbar__logo__ img {
+    height: 30px;
+  }
+
+  .__navbar_searchbar__ {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .__navbar__signup {
+    display: none;
+  }
+
+
+  .__navbar__hamburger__ svg {
+    width: 24px;
+    height: 24px;
+  }
+
+
+
+  .__navbar__signup-mobile {
+    position: absolute;
+    top: 10px;
+    right: 1px;
+    width: 230px;
+    background-color: rgb(249 115 22);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    z-index: 1;
+    transition: all 0.5s ease-out;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+  }
+
+  .__navbar__signup-mobile>p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .__navbar__signup-mobile button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: var(--foreground-color);
+    background-color: #ffffff;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 8px 40px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #635656;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+
+}
+
+

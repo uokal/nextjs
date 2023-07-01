@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-color: #000000;
+  --background-start-color: #d6dbdc;
+  --background-end-color: #ffffff;
+}
+
+.overflex {
+  overflow-x: auto;
+}
+
+.overflex::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.overflex::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.overflex::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+.--postScroll::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+.--postScroll::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.309) 0px 3px 8px;
+}
+
+.--postScroll::-webkit-scrollbar-track {
+  background-color: rgba(211, 211, 211, 0.671);
+  border-radius: 50px;
+}
+
+.__marketStyle {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.--marketScroll::-webkit-scrollbar {
+  display: none;
+}
+.stock-list span{
+  padding: 0 15px;
+  text-transform: uppercase;
+
+}
+.stock-list span.red{
+  color: red;
+}
+.stock-list span.green{
+  color: green;
+}
+.companylogo{
+  background-color: #E8F0F8;
+  padding: 15px;
+}
+.companylogo img{
+  max-height: 100px;
+  object-fit: cover;
+}
+.nav-mobile-active{
+  background-color:#112741 ;
+  border-bottom:2px solid #AE3136;
+}
+.nav-mobile{
+  background-color:#193B61 ;
+  border-bottom:2px solid transparent;
+}
+.nav-bg{
+  background-color: #193B61;
+}
+.nav-menu-active{
+  border-bottom:2px solid #AE3136;
+}
