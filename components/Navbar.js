@@ -19,7 +19,7 @@ function Navbar() {
             <nav className='sticky top-0 left-0 bg-white z-10 flex justify-between items-center h-16 bg-white-800 shadow-md lg:px-10 sm:px-2  py-3 max-[425px]:px-3' >
                 {/* for logo */}
                 <div className='h-10 flex items-center'>
-                    <Image src="/logo.png" alt="goIndiaStack"
+                    <img src="/logo.png" alt="goIndiaStack"
                         width={60}
                         height={30}
                         className='h-7 md:h-8 lg:h-10 mx-auto'

@@ -27,7 +27,7 @@ const UserPost = (props) => {
         </div>
         {postImage && (
           <div className="flex justify-center mb-2 items-center">
-            <Image
+            <img
               src={postImage}
               width={100}
               height={250}
@@ -39,7 +39,7 @@ const UserPost = (props) => {
         )}
 
         <div className="flex">
-          <Image
+          <img
             src={userAvator}
             width={80}
             height={80}
